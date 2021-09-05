@@ -1,4 +1,4 @@
-# spell-recommendation-system-using-KNN
+# spelling-recommendation-system-using-KNN
 input 'msg' output will be 'message'
 
 **Introduction:** nowadays people tend to use only consonant characters of a word when writing informal communication. So people use ‘excllnt’ instead of ‘excellent’ as a result when they go for writing formal communication they literally fight to figure out the actual spelling. They usually try out the following combination:
