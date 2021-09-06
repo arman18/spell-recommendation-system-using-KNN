@@ -7,11 +7,15 @@ excelent
 excellant etc
 There are also many words which actually hard to remember the vowel sequence like ‘lieutenant, ‘nauseous’ etc
 
-My spell recommendation system will help them out by providing some suggestions. User will provide just some hint of their intended word and our system will use KNN to find out the nearest words of the hint.
+**Objective:** My spell recommendation system will help them out by providing some suggestions. User will provide just some hint of their intended word and our system will use KNN to find out the nearest words of the hint. I,e. input: msg, output: message
 
 **Dataset:** I have collected around 500 words as a dictionary inside the ‘dict.txt’ file. Every line contains a single word with no leading or trailing space. One can add more words if needed.
 
-**Procedure:** dummy character(*) will be inserted at the mismatch position in the input string according to our dictionary string. Then we will consider the matching sequence to calculate the weight to be assigned. The earlier the match happens, the more weight it will be given. Finally those words in the dictionary that contain top weight will be suggested.
+**Procedure:** dummy character(*) will be inserted at the mismatch position in the input string according to our dictionary string. Then we will consider the matching sequence to calculate the weight to be assigned. The earlier the match happens, the more weight it will be given.
+The rule is: 1/(position)
+So first match will get 100% weight and second match will get 50%  so on.
+
+Finally those words in the dictionary that contain top weight will be suggested.
 
 **For example:**suppose we have only two words in the dictionary which are ‘precious’ and ‘previous’ and user inputs the string ‘prvs’.
 let see how to assign weight for those two words
